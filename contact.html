@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Marqus Kynan Borromeo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>MARQUS KYNAN</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">MENU</button>
+      <ul class="nav-links">
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="portfolio.html">portfolio</a></li>
+        <li><a href="services.html">services</a></li>
+        <li><a href="resume.html">resume</a></li>
+        <li><a href="contact.html" class="active">contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="page-header">
+        <span class="eyebrow">[ CONTACT ]</span>
+        <h1>Let's talk</h1>
+        <p>Tell me about your project, internship/full-time opportunity, or collaboration idea.</p>
+      </div>
+
+      <div class="contact-layout">
+        <form id="contact-form" data-endpoint="https://api.web3forms.com/submit" novalidate>
+          <!-- Replace YOUR_WEB3FORMS_ACCESS_KEY with your Web3Forms key to enable direct API submission; otherwise mailto: fallback runs automatically -->
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input class="form-control" type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input class="form-control" type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input class="form-control" type="text" id="subject" name="subject" placeholder="Project inquiry / Collaboration" />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" placeholder="Tell me about what you're building..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-coral">Send message</button>
+          <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+        </form>
+
+        <div>
+          <div class="window-card dark-body">
+            <div class="window-titlebar yellow">
+              <span>contact_info.sh</span>
+              <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            </div>
+            <div class="window-body">
+              <div class="contact-item">
+                <span>mrqskynn@gmail.com</span>
+                <button type="button" class="copy-btn" data-copy="mrqskynn@gmail.com">COPY</button>
+              </div>
+              <div class="contact-item">
+                <span>0977-294-5195</span>
+                <button type="button" class="copy-btn" data-copy="0977-294-5195">COPY</button>
+              </div>
+              <div class="contact-item">
+                <span>github.com/mrqskynn</span>
+                <a href="https://github.com/mrqskynn" target="_blank" rel="noopener noreferrer" class="copy-btn">OPEN</a>
+              </div>
+              <div class="contact-item">
+                <span>linkedin.com/in/mrqskynn/</span>
+                <a href="https://www.linkedin.com/in/mrqskynn/" target="_blank" rel="noopener noreferrer" class="copy-btn">OPEN</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>&copy; 2026 Marqus Kynan Borromeo. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="https://github.com/mrqskynn" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/mrqskynn/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:mrqskynn@gmail.com">mrqskynn@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

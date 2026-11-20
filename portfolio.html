@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Marqus Kynan Borromeo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>MARQUS KYNAN</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">MENU</button>
+      <ul class="nav-links">
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="portfolio.html" class="active">portfolio</a></li>
+        <li><a href="services.html">services</a></li>
+        <li><a href="resume.html">resume</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="page-header">
+        <span class="eyebrow">[ PORTFOLIO ]</span>
+        <h1>Selected work</h1>
+        <p>Full-stack web applications built with React, PHP, ASP.NET MVC, Node.js, and SQL/NoSQL databases.</p>
+      </div>
+
+      <div class="filter-bar" role="group" aria-label="Filter projects by stack">
+        <button class="filter-pill active" data-filter="all">All</button>
+        <button class="filter-pill" data-filter="react">React</button>
+        <button class="filter-pill" data-filter="php">PHP &amp; MySQL</button>
+        <button class="filter-pill" data-filter="aspnet">ASP.NET MVC</button>
+        <button class="filter-pill" data-filter="mern">MERN Stack</button>
+        <button class="filter-pill" data-filter="ai">AI / Helpdesk</button>
+      </div>
+
+      <div class="grid-2">
+        <!-- Project 1 -->
+        <article class="window-card project-card" data-tags="react,php">
+          <div>
+            <div class="window-titlebar">
+              <span>pwd-app-system</span>
+              <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            </div>
+            <img src="assets/pwd_portal.jpg" alt="City of Dasmariñas PWD Application Portal screenshot" class="project-screenshot" />
+            <div class="window-body">
+              <h3>PWD Automated Application System</h3>
+              <p style="font-size: 0.9rem; color: var(--ink-muted); margin-top: 8px;">
+                Full-stack registration system for Persons with Disabilities featuring online applications, status tracking, and document handling.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">React 19</span>
+                <span class="tech-tag">PHP 8.2</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+            </div>
+          </div>
+          <div style="padding: 0 20px 20px;">
+            <a href="https://github.com/Keonbe/PWD-Automated-Application-System" target="_blank" rel="noopener noreferrer" class="btn btn-white btn-sm">
+              View on GitHub &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="window-card project-card" data-tags="aspnet">
+          <div>
+            <div class="window-titlebar">
+              <span>event-organizer</span>
+              <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            </div>
+            <div class="ui-preview events">
+              <div class="ui-mock-bar">
+                <span>EVENT ORGANISER</span>
+                <span>CRUD</span>
+              </div>
+              <div class="ui-mock-grid">
+                <div class="ui-mock-box"><span>TECH</span><strong>120 CAP</strong></div>
+                <div class="ui-mock-box"><span>DATE</span><strong>DEC 2025</strong></div>
+                <div class="ui-mock-box"><span>VENUE</span><strong>HALL A</strong></div>
+              </div>
+              <span class="ui-mock-cta">+ CREATE EVENT</span>
+            </div>
+            <div class="window-body">
+              <h3>Event Organizer</h3>
+              <p style="font-size: 0.9rem; color: var(--ink-muted); margin-top: 8px;">
+                Web-based event management system with full CRUD operations, form validation, capacity tracking, and responsive Bootstrap UI.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">ASP.NET MVC</span>
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+          <div style="padding: 0 20px 20px;">
+            <a href="https://github.com/mrqskynn/EventOrganiser" target="_blank" rel="noopener noreferrer" class="btn btn-white btn-sm">
+              View on GitHub &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="window-card project-card" data-tags="react,mern">
+          <div>
+            <div class="window-titlebar">
+              <span>school-portal-dsi</span>
+              <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            </div>
+            <img src="assets/school_portal.jpg" alt="Don Stevens Institute of Cavite Inc. School Portal screenshot" class="project-screenshot" />
+            <div class="window-body">
+              <h3>School Enrollment &amp; Portal System</h3>
+              <p style="font-size: 0.9rem; color: var(--ink-muted); margin-top: 8px;">
+                K–12 school management platform for Don Stevens Institute of Cavite Inc. with role-based dashboards and PayMongo BPI &amp; cash payments.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Tailwind</span>
+              </div>
+            </div>
+          </div>
+          <div style="padding: 0 20px 20px;">
+            <a href="https://github.com/mrqskynn/SchoolPortalDSI" target="_blank" rel="noopener noreferrer" class="btn btn-white btn-sm">
+              View on GitHub &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="window-card project-card" data-tags="react,ai">
+          <div>
+            <div class="window-titlebar">
+              <span>apexdesk-app</span>
+              <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            </div>
+            <img src="assets/apexdesk.jpg" alt="ApexDesk IT Help & Services screenshot" class="project-screenshot" />
+            <div class="window-body">
+              <h3>ApexDesk — IT Help &amp; Services</h3>
+              <p style="font-size: 0.9rem; color: var(--ink-muted); margin-top: 8px;">
+                AI-assisted L1 IT helpdesk portal offering instant self-service answers from verified IT SOPs, automated password resets, and direct ticketing.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">AI Assistant</span>
+                <span class="tech-tag">IT Helpdesk</span>
+                <span class="tech-tag">Ticketing</span>
+                <span class="tech-tag">Vercel</span>
+              </div>
+            </div>
+          </div>
+          <div style="padding: 0 20px 20px; display: flex; gap: 10px; flex-wrap: wrap;">
+            <a href="https://apexdesk-app.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-coral btn-sm">
+              Live Demo &rarr;
+            </a>
+            <a href="https://github.com/mrqskynn/ApexDesk" target="_blank" rel="noopener noreferrer" class="btn btn-white btn-sm">
+              View on GitHub &rarr;
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <section class="cta-banner">
+        <div class="window-card yellow-body">
+          <div class="window-titlebar blue">
+            <span>cta_prompt.exe</span>
+            <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+          </div>
+          <div class="window-body cta-banner-inner">
+            <div>
+              <h2>Have a project in mind?</h2>
+              <p style="margin-top: 6px; font-size: 0.98rem;">Let's build something fast, reliable, and tailored to your goals.</p>
+            </div>
+            <a href="contact.html" class="btn btn-dark">Contact me</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>&copy; 2026 Marqus Kynan Borromeo. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="https://github.com/mrqskynn" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/mrqskynn/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:mrqskynn@gmail.com">mrqskynn@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
